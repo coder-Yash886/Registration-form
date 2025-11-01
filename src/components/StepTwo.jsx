@@ -31,26 +31,31 @@ const StepTwo = ({ formData, handleChange, prevStep, handleSubmit }) => {
           title="Use your AKGEC email (e.g. name@akgec.ac.in)"
           required
         />
-      </div>
+       </div>
 
-      <div>
-        <p className="font-semibold text-lg mb-2">Residency Status</p>
-        <div className="flex gap-8 flex-wrap">
+       <div>
+         <p className="font-semibold text-lg mb-2">Residency Status</p>
+         <div className="flex gap-8 flex-wrap">
           <label><input type="radio" name="residency" value="Hosteler" onChange={handleChange}/> Hosteler</label>
-          <label><input type="radio" name="residency" value="Day Scholar" onChange={handleChange}/> Day Scholar</label>
-        </div>
-      </div>
+           <label><input type="radio" name="residency" value="Day Scholar" onChange={handleChange}/> Day Scholar</label>
+         </div>
+       </div>
 
-      <div className="flex justify-between mt-6">
-        <button type="button" onClick={prevStep} className="bg-gray-200 text-black py-2 px-6 rounded-lg font-semibold hover:bg-gray-300">
-          Back
-        </button>
-        <button type="submit" className="bg-cyan-400 text-black py-2 px-6 rounded-lg font-semibold hover:bg-cyan-500">
-          Submit
-        </button>
-      </div>
-    </form>
-  );
-};
+       <div className="flex justify-between mt-6">         <button type="button" onClick={prevStep} className="bg-gray-200 text-black py-2 px-6 rounded-lg font-semibold hover:bg-gray-300">
+           Back
+         </button>
+         <button type="submit" className="bg-cyan-400 text-black py-2 px-6 rounded-lg font-semibold hover:bg-cyan-500">
+           Submit
+         </button>
+       </div>
+     </form>
+   );
+ };
 
-export default StepTwo;
+ export default StepTwo; 
+
+
+         
+
+
+          
