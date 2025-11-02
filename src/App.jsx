@@ -31,11 +31,17 @@ function App() {
   };
 
   return (
-    <div className="relative min-h-screen text-white overflow-x-hidden">
+    <div className="relative h-screen w-full overflow-hidden text-white flex flex-col items-center justify-between">
+      
       <Background />
-      <Header />
 
-      <main className="flex flex-col justify-center items-center min-h-[75vh] px-4 sm:px-6 md:px-10">
+    
+      <div className="w-full flex-shrink-0">
+        <Header />
+      </div>
+
+  
+      <main className="flex-grow flex items-center justify-center w-full px-4 sm:px-6 md:px-10 z-10">
         {step === 1 && (
           <StepOne
             formData={formData}
@@ -54,7 +60,10 @@ function App() {
         {step === 3 && <SuccessPage />}
       </main>
 
-      <Footer />
+    
+      <div className="w-full flex-shrink-0">
+        <Footer />
+      </div>
     </div>
   );
 }
